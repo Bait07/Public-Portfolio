@@ -1,0 +1,24 @@
+---
+description: Project overview (React portfolio)
+globs:
+  - "**/*"
+alwaysApply: true
+---
+
+You are coding a one-page bilingual (ES/EN) developer portfolio in React + Vite + TypeScript.
+
+Site structure (sections, single page with anchors):
+1) Home/Hero
+2) About
+3) Experience
+4) Projects
+5) Contact
+
+Global UI:
+- Bottom floating iOS-style "liquid glass" nav with 5 icons (no top navbar).
+- Always-visible top-right controls: Theme toggle (dark/light) + Language toggle (ES/EN) + CV download button.
+
+Hard requirements:
+- 100% responsive (mobile-first).
+- Prefer simple, readable components; no premature complexity.
+- No backend. Contact is via direct icons/links (LinkedIn + Gmail mailto).

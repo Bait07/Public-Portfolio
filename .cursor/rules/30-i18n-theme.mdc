@@ -1,0 +1,23 @@
+---
+description: Theme + language toggles behavior
+globs:
+  - "src/**/*.{ts,tsx}"
+alwaysApply: true
+---
+
+Theme toggle:
+- Always visible top-right.
+- Toggle data-theme on <html> or <body>.
+- Persist preference in localStorage.
+- Respect prefers-color-scheme on first load.
+
+Language toggle (ES/EN):
+- Always visible top-right next to theme toggle.
+- Use react-i18next useTranslation().
+- Persist chosen language in localStorage.
+- Default language: "es" with fallback "es".
+- All user-facing strings must come from i18n JSON files (no hardcoded UI text).
+
+Accessibility:
+- Buttons must have aria-label.
+- Ensure focus styles are visible.

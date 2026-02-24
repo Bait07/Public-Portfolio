@@ -1,0 +1,197 @@
+{
+  "ui": {
+    "downloadCv": "Download CV",
+    "contact": "Contact",
+    "contactDirect": "Direct contact",
+    "theme": "Theme",
+    "language": "Language"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Juan Diego Enríquez",
+    "subtitle": "Frontend Web Developer",
+    "tagline": "I build modern, responsive interfaces with React and Astro.",
+    "scrollDown": "Scroll"
+  },
+  "about": {
+    "title": "About",
+    "subtitle": "Frontend developer focused on detail, performance, and user experience.",
+    "bio1": "I'm Juan Diego Enríquez, a frontend web developer with hands-on experience building production-ready React and Astro applications. I focus on responsive, user-centered interfaces backed by clean, maintainable code — trilingual in Spanish, English, and French.",
+    "bio2": "I've shipped real pages and components at companies like Smiofi and Arthur J. Gallagher, integrating Firebase, REST APIs, and CMS platforms. When I'm not building, I'm exploring new tools or working on personal projects that blend design and code.",
+    "highlights": {
+      "quality": "Clean code",
+      "performance": "High performance",
+      "responsive": "100% responsive"
+    },
+    "skillsLabel": "Technologies"
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "A quick look at my experience.",
+    "items": [
+      {
+        "role": "Web Developer",
+        "company": "Arthur J. Gallagher",
+        "period": "Oct 2025 — Present",
+        "description": "Building and maintaining web pages and landing pages using CRM platforms, collaborating with marketing teams to deliver effective digital campaigns.",
+        "bullets": [
+          "Develop and maintain pages using Ceros, HubSpot, and Sitecore",
+          "Collaborate with marketing to design and implement digital campaigns",
+          "Customize templates and optimize UX for responsive, cross-browser compatibility",
+          "Align designs, branding, and content with business goals cross-functionally"
+        ],
+        "tech": ["Ceros", "HubSpot", "Sitecore", "HTML/CSS"]
+      },
+      {
+        "role": "Frontend Developer (Mid-Level)",
+        "company": "Smiofi",
+        "period": "Nov 2024 — Oct 2025",
+        "description": "Designed and shipped reusable React components and modern frontend modules for production web pages, integrating Firebase and DevOps workflows.",
+        "bullets": [
+          "Built reusable, responsive React components following UX/UI principles",
+          "Developed interfaces optimized for desktop, mobile, and tablet",
+          "Integrated Firebase (Firestore, Authentication) for secure data and user auth",
+          "Version control and CI/CD workflows with Git and Azure DevOps"
+        ],
+        "tech": ["React", "TypeScript", "Firebase", "Firestore", "Azure DevOps"]
+      },
+      {
+        "role": "Freelance Developer",
+        "company": "Personal Projects",
+        "period": "2023 — 2024",
+        "description": "Developed web applications and tools independently, combining React frontend development with UX design and Python automation.",
+        "bullets": [
+          "Built React web applications with well-structured components and hooks",
+          "Created a medical appointment management system (academic project)",
+          "Built a file auto-organizer in Python to sort files by type, date, or extension",
+          "Designed responsive, mobile-first UI prototypes using Figma"
+        ],
+        "tech": ["React", "Python", "Firebase", "Figma"]
+      },
+      {
+        "role": "Operational Support Assistant",
+        "company": "Dynamitech",
+        "period": "2022 — 2023",
+        "description": "Supported IT operations, server monitoring, and cross-team collaboration in a fast-paced operational environment.",
+        "bullets": [
+          "Assisted in daily team organization and workforce management",
+          "Monitored and maintained servers to ensure operational uptime",
+          "Performed preventive and corrective computer maintenance",
+          "Collaborated with marketing teams for point-of-sale setup and support"
+        ],
+        "tech": ["IT Support", "Windows Server", "Hardware", "POS"]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Some of the projects I've worked on.",
+    "items": [
+      {
+        "title": "Smiofi.com",
+        "description": "Feature and landing pages built for Smiofi, live in production. Reusable React components integrated with Firebase authentication and Firestore.",
+        "tags": ["⚛️ React", "🚀 Astro", "🔥 Firebase", "⚡ JavaScript"],
+        "github": "",
+        "live": "https://smiofi.com",
+        "images": [
+          "/imgs/Projects/smiofiweb/s1.png",
+          "/imgs/Projects/smiofiweb/s2.png",
+          "/imgs/Projects/smiofiweb/s3.png"
+        ]
+      },
+      {
+        "title": "DatAnalyst",
+        "description": "Modular system to extract, transform, and analyze data from Firestore. Interactive visualizations, statistical analysis, and Excel/CSV export.",
+        "tags": ["🐍 Python", "📊 Streamlit", "☁️ Firestore", "📈 Pandas"],
+        "github": "",
+        "live": "",
+        "images": [
+          "/imgs/Projects/dataanalys/d1.png",
+          "/imgs/Projects/dataanalys/d2.png",
+          "/imgs/Projects/dataanalys/d3.png",
+          "/imgs/Projects/dataanalys/d4.png",
+          "/imgs/Projects/dataanalys/d5.png"
+        ]
+      },
+      {
+        "title": "Luminos RMIS",
+        "description": "Multi-page landing for Gallagher Bassett's Luminos RMIS. Typewriter hero, lead capture form with geographic validation, and services and analytics sections.",
+        "tags": ["⚛️ React", "🔷 TypeScript", "🎨 Material UI", "🎬 Framer Motion"],
+        "github": "https://github.com/Bait07/gallagher-luminos",
+        "live": "",
+        "images": [
+          "/imgs/Projects/Luminos/L1.png",
+          "/imgs/Projects/Luminos/l2.png",
+          "/imgs/Projects/Luminos/l3.png",
+          "/imgs/Projects/Luminos/l4.png"
+        ]
+      },
+      {
+        "title": "Smiofi App",
+        "description": "Internal web application built for Smiofi. Real-time data management with Firestore, user authentication, REST API consumption, and CI/CD pipeline with Azure DevOps.",
+        "tags": ["⚛️ React", "🔷 TypeScript", "🔥 Firestore", "☁️ Azure DevOps", "🔌 REST APIs"],
+        "github": "",
+        "live": "https://smiofi.com/app/profesional/ingresar",
+        "images": [
+          "/imgs/Projects/smiofi/mockup_ready_image_1.png",
+          "/imgs/Projects/smiofi/smiofi.com_app_profesional_team_1E617d_cases_e9kjCzWXbdEyLd5m5BEw8m.png",
+          "/imgs/Projects/smiofi/smiofi.com_app_profesional_team_1E617d_cases_e9kjCzWXbdEyLd5m5BEw8m_caseModalValue=documents.png",
+          "/imgs/Projects/smiofi/smiofi.com_app_profesional_team_1E617d_reportes (2).png"
+        ]
+      },
+      {
+        "title": "Organizer",
+        "description": "Desktop app that automatically organizes files into folders by type and modification date. Simple, intuitive GUI — distributable as a .exe.",
+        "tags": ["🐍 Python", "🖥️ Tkinter", "📦 Automation"],
+        "github": "https://github.com/Bait07/Organizer",
+        "live": "",
+        "images": [
+          "/imgs/Projects/organizador/1o.png",
+          "/imgs/Projects/organizador/2.png",
+          "/imgs/Projects/organizador/3.png"
+        ]
+      },
+      {
+        "title": "Deudores App",
+        "description": "Desktop app to manage and track debtors at an educational institution. Role-based records (students, teachers, staff), search, Excel export, and automated backups.",
+        "tags": ["🐍 Python", "🖥️ Tkinter", "🗄️ SQLite", "📑 Excel"],
+        "github": "",
+        "live": "",
+        "images": [
+          "/imgs/Projects/deudores/1d.png",
+          "/imgs/Projects/deudores/2d.png",
+          "/imgs/Projects/deudores/3d.png"
+        ]
+      },
+      {
+        "title": "POS Libros",
+        "description": "Point of sale system for a school bookstore. Inventory management, sales processing, supplier administration, price history, and Excel reports. Automatic 24-hour backups.",
+        "tags": ["🐍 Python", "🖥️ Tkinter", "🗄️ SQLite", "📑 Excel"],
+        "github": "",
+        "live": "",
+        "images": [
+          "/imgs/Projects/books/b1.png",
+          "/imgs/Projects/books/b2.png",
+          "/imgs/Projects/books/b3.png",
+          "/imgs/Projects/books/b4.png"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Have a project in mind? I'd love to hear from you.",
+    "emailLabel": "Send an email",
+    "emailHref": "mailto:juandiegoe1318@gmail.com",
+    "linkedinLabel": "LinkedIn",
+    "linkedinHref": "https://www.linkedin.com/in/juan-diego-enr%C3%ADquez-cardona/",
+    "githubLabel": "GitHub",
+    "githubHref": "https://github.com/juandiegoenriquez"
+  }
+}

@@ -1,0 +1,25 @@
+---
+description: Library rules (use these, avoid others)
+globs:
+  - "src/**/*.{ts,tsx}"
+alwaysApply: true
+---
+
+Allowed libraries (use these consistently):
+- Animations: framer-motion (preferred for scroll/hover/in-view).
+- Icons: lucide-react ONLY (do not use react-icons).
+- i18n: i18next + react-i18next + i18next-browser-languagedetector.
+- Smooth scroll: @studio-freight/lenis.
+- Class utils: clsx + tailwind-merge (prefer a cn() helper).
+- Styling: Tailwind CSS + custom CSS for liquid glass.
+
+Do NOT introduce:
+- UI kits (MUI/Chakra/shadcn).
+- Routers (React Router/Next Router).
+- Email/form libraries (EmailJS, Formik, React Hook Form).
+- State management libs (Redux/Zustand) unless explicitly requested.
+
+Implementation preferences:
+- Use functional components + TypeScript.
+- Use framer-motion's whileInView/viewport for reveal animations.
+- Keep animations tasteful: 0.3s for hover, 0.6–0.8s for section reveals.
