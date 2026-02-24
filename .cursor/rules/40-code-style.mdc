@@ -1,4 +1,0 @@
----
-alwaysApply: true
----
-- Always use a cn() helper built with clsx + tailwind-merge for composing className strings.
