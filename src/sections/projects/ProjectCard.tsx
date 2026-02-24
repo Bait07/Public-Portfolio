@@ -33,6 +33,10 @@ export const ProjectCard = memo(function ProjectCard({
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [activeSlide, setActiveSlide] = useState(0);
 
+  const isTouchDevice =
+    typeof window !== "undefined" &&
+    window.matchMedia("(hover: none) and (pointer: coarse)").matches;
+
   const handleActiveChange = useCallback((i: number) => setActiveSlide(i), []);
   const handleCenterClick = useCallback(() => setIsModalOpen(true), []);
   const handleCloseModal = useCallback(() => setIsModalOpen(false), []);
@@ -50,7 +54,7 @@ export const ProjectCard = memo(function ProjectCard({
           <ProjectCarousel
             images={resolvedImages}
             title={title}
-            onCenterClick={handleCenterClick}
+            onCenterClick={isTouchDevice ? undefined : handleCenterClick}
             onActiveChange={handleActiveChange}
           />
         </div>

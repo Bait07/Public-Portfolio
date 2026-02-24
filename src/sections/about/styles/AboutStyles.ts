@@ -1,9 +1,9 @@
 import { cn } from "@/lib/cn";
 
 export const aboutStyles = {
-  section: "relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8",
+  section: "relative py-12 sm:py-20 px-4 sm:px-6 lg:px-8",
   container: "relative max-w-[1200px] mx-auto",
-  avatarWrapper: "flex justify-center my-4",
+  avatarWrapper: "flex justify-center mt-1 mb-3",
   avatar: cn(
     "relative w-44 h-44 rounded-full",
     "overflow-hidden",
@@ -16,7 +16,7 @@ export const aboutStyles = {
     "h-px origin-left bg-gradient-to-r from-primary/40 via-secondary/25 to-transparent mb-8 mt-2",
 
   /* Content grid */
-  grid: "grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16",
+  grid: "grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10",
   bioCol: "space-y-5",
   bioParagraph: "text-text/75 text-sm sm:text-[0.9375rem] leading-relaxed",
 

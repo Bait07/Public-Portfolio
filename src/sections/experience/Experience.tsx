@@ -87,7 +87,7 @@ export function Experience() {
       ref={sectionRef}
       id="experience"
       className={experienceStyles.section}
-      style={{ height: `${items.length * 100}vh` }}
+      style={{ height: `${items.length * (window.innerWidth < 768 ? 60 : 100)}vh` }}
     >
       <div className={experienceStyles.sticky}>
         <div className={experienceStyles.container}>
