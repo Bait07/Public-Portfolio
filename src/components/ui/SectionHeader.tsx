@@ -10,7 +10,7 @@ interface SectionHeaderProps {
 }
 
 export function SectionHeader({
-  index,
+  index: _index,
   title,
   subtitle,
   align = "left",
