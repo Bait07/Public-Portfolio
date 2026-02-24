@@ -27,6 +27,9 @@ export const ProjectCard = memo(function ProjectCard({
   images,
   index,
 }: ProjectCardProps) {
+  const resolvedImages = images.map(
+    (img) => import.meta.env.BASE_URL + img.replace(/^\//, ""),
+  );
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [activeSlide, setActiveSlide] = useState(0);
 
@@ -45,7 +48,7 @@ export const ProjectCard = memo(function ProjectCard({
       >
         <div className={s.carouselWrapper}>
           <ProjectCarousel
-            images={images}
+            images={resolvedImages}
             title={title}
             onCenterClick={handleCenterClick}
             onActiveChange={handleActiveChange}
@@ -95,7 +98,7 @@ export const ProjectCard = memo(function ProjectCard({
         isOpen={isModalOpen}
         onClose={handleCloseModal}
         title={title}
-        images={images}
+        images={resolvedImages}
         initialSlide={activeSlide}
       />
     </>

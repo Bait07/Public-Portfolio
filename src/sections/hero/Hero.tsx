@@ -7,8 +7,8 @@ import { heroStyles } from "./styles/HeroStyles";
 export function Hero() {
   const { t, i18n } = useTranslation("common");
   const cvHref = i18n.language.startsWith("es")
-    ? "/cv/JuanDiego CV (Español).pdf"
-    : "/cv/JuanDiego CV english.pdf";
+    ? `${import.meta.env.BASE_URL}cv/JuanDiego CV (Español).pdf`
+    : `${import.meta.env.BASE_URL}cv/JuanDiego CV english.pdf`;
   const sectionRef = useRef<HTMLElement>(null);
 
   const { scrollYProgress } = useScroll({

@@ -72,7 +72,9 @@ export function About() {
   const { t } = useTranslation("common");
   const sectionRef = useRef<HTMLElement>(null);
   const isDark = useIsDark();
-  const imgSrc = isDark ? "/imgs/about/WB.jpeg" : "/imgs/about/color.jpeg";
+  const imgSrc = isDark
+    ? `${import.meta.env.BASE_URL}imgs/about/WB.jpeg`
+    : `${import.meta.env.BASE_URL}imgs/about/color.jpeg`;
 
   /* ── Mobile detection ─────────────────────────────────────────────── */
   const [isMobile, setIsMobile] = useState(
