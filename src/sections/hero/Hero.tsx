@@ -1,7 +1,8 @@
-import { useRef } from "react";
+import { useRef, useState, useCallback } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { Download, Linkedin } from "lucide-react";
+import { Download, Linkedin, Loader2 } from "lucide-react";
+import { cn } from "@/lib/cn";
 import { heroStyles } from "./styles/HeroStyles";
 
 export function Hero() {
@@ -10,6 +11,28 @@ export function Hero() {
     ? `${import.meta.env.BASE_URL}cv/JuanDiego CV (Español).pdf`
     : `${import.meta.env.BASE_URL}cv/JuanDiego CV english.pdf`;
   const sectionRef = useRef<HTMLElement>(null);
+  const [isDownloading, setIsDownloading] = useState(false);
+
+  const handleDownload = useCallback(async () => {
+    if (isDownloading) return;
+    setIsDownloading(true);
+    try {
+      const res = await fetch(cvHref);
+      const blob = await res.blob();
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = i18n.language.startsWith("es")
+        ? "JuanDiego CV (Español).pdf"
+        : "JuanDiego CV english.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+    } finally {
+      setIsDownloading(false);
+    }
+  }, [cvHref, isDownloading, i18n.language]);
 
   const { scrollYProgress } = useScroll({
     target: sectionRef,
@@ -63,10 +86,20 @@ export function Hero() {
           className={heroStyles.ctaWrapper}
         >
           {/* Descargar CV — estilo glass/secundario */}
-          <a href={cvHref} download className={heroStyles.ctaButton}>
-            <Download className="w-4 h-4 shrink-0" aria-hidden />
+          <button
+            onClick={handleDownload}
+            disabled={isDownloading}
+            className={cn(
+              heroStyles.ctaButton,
+              isDownloading && "opacity-60 cursor-not-allowed",
+            )}
+          >
+            {isDownloading
+              ? <Loader2 className="w-4 h-4 shrink-0 animate-spin" aria-hidden />
+              : <Download className="w-4 h-4 shrink-0" aria-hidden />
+            }
             {t("ui.downloadCv")}
-          </a>
+          </button>
           {/* LinkedIn — acceso directo al perfil */}
           <a
             href={t("contact.linkedinHref")}
